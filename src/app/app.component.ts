@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'few400';
+  footer = 'This is the footer';
+  doIt() {
+    this.footer = 'Jeff Was Here';
+  }
+
+  myKidWantsSomething(what: string) {
+    console.log(what);
+  }
 }
