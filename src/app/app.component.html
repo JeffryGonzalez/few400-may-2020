@@ -2,11 +2,10 @@
   <h1>FEW 400</h1>
   <p class="subheading"
      (click)="doIt()">{{ title }} </p>
+  <app-clock></app-clock>
 </header>
 <main class="container">
-  <p>This is what the footer says: {{ footer }}</p>
+  <app-nav></app-nav>
 
   <router-outlet></router-outlet>
 </main>
-<app-footer (something)="myKidWantsSomething($event)"
-            [footerMessage]="footer"></app-footer>

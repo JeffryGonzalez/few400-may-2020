@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HelperService } from './services/helper.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(service: HelperService) {
+    console.log(service.formatName('Alexander', 'Hamilton'));
+  }
   title = 'few400';
   footer = 'This is the footer';
   doIt() {
