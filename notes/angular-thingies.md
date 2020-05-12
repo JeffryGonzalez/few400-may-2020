@@ -70,3 +70,11 @@ Or it can refer to some data that the parent "owns" and wants to share with the 
 Outputs are a way for a child component to inform it's parent component that something interesting happened.
 
 (Note: We don't do a ton of these in angular when using redux because there "something interesting" is always an action being dispatched)
+
+
+Components do two things:
+
+- The display the application state in an accurate, meaningful, and timely way.
+- The provide affordances through which the user can change the application state.
+
+(Application state - "The value of all meaningful variables in your application")
